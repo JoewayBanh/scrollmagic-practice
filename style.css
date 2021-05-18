@@ -25,12 +25,22 @@ footer {
   font-size: 1.5rem;
   padding: 1rem;
 }
+.section-1 p {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
 .to-top {
-  padding: 2rem;
+  padding: 1.2rem;
   font-size: 1.2rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background: white;
   border: black solid 2px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 .section-2 {
   height: 100vh;
@@ -43,4 +53,25 @@ footer {
   position: absolute;
   top: 50%;
   left: 0%;
+}
+.text-swipe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  mix-blend-mode: darken;
+}
+.text-to-swipe {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.t-swipe {
+  background: linear-gradient(to top, #fed6e3 0%, #a8edea 100%);
+}
+span {
+  color: rgb(56, 135, 135);
 }
