@@ -29,12 +29,14 @@ const planeTimeline = gsap.timeline({
     duration: 1,
     ease: "power2.inOut",
     autoRotate: true,
+    curviness: 1.5,
   },
 });
 planeTimeline.fromTo(
   paperPlane,
   { x: "-10%", y: "0%", rotation: "0" },
-  { x: "300%", y: "200%", rotation: "10" }
+  { x: "300%", y: "200%", rotation: "10" },
+  "-=.5"
 );
 planeTimeline.to(paperPlane, { x: "400%", y: "200%", rotation: "-10" });
 planeTimeline.to(paperPlane, { x: "900%", y: "-400%", rotation: "-80" });
