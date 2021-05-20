@@ -13,17 +13,19 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  background: rgb(184, 178, 154);
+  background: #d299c2;
 }
 .section-1 {
   height: 100vh;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background: rgb(63, 41, 41);
+  /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   font-size: 1.5rem;
   padding: 1rem;
+  color: rgb(135, 207, 235);
 }
 .section-1 p {
   width: 50%;
@@ -31,6 +33,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  color: white;
 }
 .to-top {
   padding: 1.2rem;
@@ -70,8 +73,9 @@ footer {
   justify-content: center;
 }
 .t-swipe {
-  background: linear-gradient(to top, #fed6e3 0%, #a8edea 100%);
+  background: linear-gradient(to top, #dc2f66 0%, #a8edea 100%);
 }
 span {
   color: rgb(56, 135, 135);
+  z-index: 1;
 }
