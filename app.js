@@ -2,7 +2,8 @@ const mouse = document.querySelector(".cursor");
 const mouseText = document.querySelector("span");
 const paperPlane = document.querySelector(".paper-plane");
 const section2 = document.querySelector(".section-2");
-const endText = document.querySelector("end-text");
+const endText = document.querySelector(".end-text");
+const endTextSection = document.querySelector("footer");
 
 const cursor = (e) => {
   mouse.style.top = e.pageY + "px";
@@ -47,5 +48,20 @@ const planeScene = new ScrollMagic.Scene({
   triggerHook: 0,
 })
   .setTween(planeTimeline)
-  .addTo(controller)
-  .setPin(section2);
+  .setPin(section2)
+  .addTo(controller);
+
+const endTimeline = gsap.timeline({
+  defaults: { duration: 1, ease: "back.inOut" },
+});
+endTimeline.fromTo(
+  endText,
+  { opacity: "0", scale: "0.1" },
+  { opacity: "1", scale: "2" }
+);
+endScene = new ScrollMagic.Scene({
+  triggerElement: endTextSection,
+  triggerHook: 0.5,
+})
+  .setTween(endTimeline)
+  .addTo(controller);
